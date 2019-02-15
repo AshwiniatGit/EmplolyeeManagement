@@ -27,7 +27,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			preparedStatement = connection.prepareStatement(insertStatement);
 			preparedStatement.setString(1, employee.getEmployeeId());
 			preparedStatement.setString(2, employee.getFirstName());
-			preparedStatement.setString(2, employee.getLastName());
+			preparedStatement.setString(3, employee.getLastName());
 			preparedStatement.setFloat(4, employee.getSalary());
 			
 			int res = preparedStatement.executeUpdate();
