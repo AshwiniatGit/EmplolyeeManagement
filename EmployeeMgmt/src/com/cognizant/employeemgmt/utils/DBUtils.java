@@ -8,7 +8,7 @@ public class DBUtils {
 	
 	public final static String URL = "jdbc:oracle:thin:@localhost:1521:XE";
 	public final static String driverName ="oracle.jdbc.driver.OracleDriver";
-	public final static String userName="system";
+	public final static String userName="admin";
 	public final static String password="root";
 	
 	public static Connection getConnection(){
